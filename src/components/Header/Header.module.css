@@ -5,8 +5,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 30px;
-  height: 30px;
+  padding: var(--header-padding);
+  height: var(--header-height);
   border: blue 2px solid;
 }
 
