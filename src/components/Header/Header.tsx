@@ -1,28 +1,13 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
-import { useState, useEffect } from "react";
 
-export default function Header() {
+interface IHeaderProps {
+  active: string | undefined | null;
+  setActive: any;
+}
+
+export default function Header({ active, setActive }: IHeaderProps) {
   const navs = ["ABOUT", "PROJECTS", "CONTACT"];
-  const [active, setActive] = useState("");
-
-  // TODO: 작동 안되므로 수정
-  // Change list elem style based on URL hash
-  useEffect(() => {
-    const handleHashChange = () => {
-      const anchor = window.location.hash.substring(1);
-      setActive(anchor);
-      console.log("hash changed");
-    };
-
-    handleHashChange();
-
-    window.addEventListener("hashchange", handleHashChange);
-
-    return () => {
-      window.removeEventListener("hashchange", handleHashChange);
-    };
-  }, []);
 
   return (
     <header id={styles.header}>
@@ -40,6 +25,7 @@ export default function Header() {
                 className={`${styles.button} ${
                   active === name ? styles.active : ""
                 }`}
+                onClick={() => setActive(name)}
               >
                 {name}
               </li>

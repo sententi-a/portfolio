@@ -1,44 +1,23 @@
 import styles from "@styles/index.module.css";
 import { Header } from "@components/Header";
 import { Section } from "@components/Section";
-import { useEffect } from "react";
+import useHashChangeOnScroll from "@hooks/useHashChangeOnScroll";
 
 export default function New() {
-  //*-- Change hash in URL on scroll --*//
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
-
-    const observerCallback: IntersectionObserverCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const id = entry.target.querySelector("div")?.getAttribute("id");
-
-          window.history.replaceState(null, "", `#${id}`);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(observerCallback, {
-      threshold: 0.5,
-    });
-
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
-
-    // Clean up the observer when the component unmounts
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  //*-- Change hash in URL on scroll && Get active section --*//
+  const [activeSection, setActiveSection] = useHashChangeOnScroll();
 
   return (
-    <main className={styles.main}>
-      <Header />
-      <Section name="ABOUT" />
-      <Section name="PROJECTS" />
-      <Section name="CONTACT" />
-    </main>
+    <>
+      <Header active={activeSection} setActive={setActiveSection} />
+      {/* TODO: Section Wrapper */}
+      <div style={{ marginTop: "60px" }}>
+        <Section name="HOME" />
+        <Section name="ABOUT" />
+        <Section name="PROJECTS" />
+        <Section name="CONTACT" />
+      </div>
+    </>
   );
 }
 
