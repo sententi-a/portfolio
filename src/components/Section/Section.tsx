@@ -1,3 +1,5 @@
+import styles from "./Section.module.css";
+
 interface ISectionProps {
   name: string;
   children?: React.ReactNode;
@@ -6,7 +8,7 @@ interface ISectionProps {
 export default function Section({ name, children }: ISectionProps) {
   return (
     <section>
-      <div id={name} style={{ width: "100vw", minHeight: "100vh" }}>
+      <div id={name} className={styles.section}>
         {children}
         {name}
       </div>
