@@ -8,6 +8,7 @@
   padding: var(--header-padding);
   height: var(--header-height);
   border: blue 2px solid;
+  z-index: 50;
 }
 
 #logo {
