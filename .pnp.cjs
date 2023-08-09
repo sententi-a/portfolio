@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:13.4.10"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:18.2.0"],\
+            ["swiper", "npm:10.1.0"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
@@ -2844,6 +2845,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:13.4.10"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:18.2.0"],\
+            ["swiper", "npm:10.1.0"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
@@ -3312,6 +3314,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/supports-preserve-symlinks-flag-npm-1.0.0-f17c4d0028-53b1e247e6.zip/node_modules/supports-preserve-symlinks-flag/",\
           "packageDependencies": [\
             ["supports-preserve-symlinks-flag", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["swiper", [\
+        ["npm:10.1.0", {\
+          "packageLocation": "./.yarn/cache/swiper-npm-10.1.0-29059563be-cb825a513e.zip/node_modules/swiper/",\
+          "packageDependencies": [\
+            ["swiper", "npm:10.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\

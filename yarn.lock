@@ -2319,6 +2319,7 @@ __metadata:
     next: 13.4.10
     react: 18.2.0
     react-dom: 18.2.0
+    swiper: ^10.1.0
     typescript: 5.1.6
   languageName: unknown
   linkType: soft
@@ -2743,6 +2744,13 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 53b1e247e68e05db7b3808b99b892bd36fb096e6fba213a06da7fab22045e97597db425c724f2bbd6c99a3c295e1e73f3e4de78592289f38431049e1277ca0ae
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "swiper@npm:10.1.0"
+  checksum: cb825a513e029cb4daf5ddce4c4fa2df425a348f05e78529f574e8a0e74c6016ae567efabac3d219828cd81ceeaff1563c832633ae014100d8a0610b3e4b3790
   languageName: node
   linkType: hard
 
