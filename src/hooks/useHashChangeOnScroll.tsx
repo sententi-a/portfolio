@@ -47,5 +47,5 @@ export default function useHashChangeOnScroll() {
     };
   }, [allowHashChange]);
 
-  return [activeSection, setActiveSection];
+  return { activeSection, setActiveSection };
 }
