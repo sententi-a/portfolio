@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
-import { IHeaderProps } from "@types/components";
+import { IHeaderProps } from "@customtypes/components";
 
 export default function Header({ active, setActive }: IHeaderProps) {
   const navs = ["ABOUT", "PROJECTS", "CONTACT"];
