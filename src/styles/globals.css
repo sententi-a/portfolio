@@ -11,8 +11,8 @@
 
   --main-background: linear-gradient(#f4f4fe, #f9fffb, #fcfef2, #fcf3f7);
 
-  --header-height: 30px;
-  --header-padding: 30px;
+  --header-height: 20px;
+  --header-padding: 60px;
   --header-total-height: calc(var(--header-height) + var(--header-padding));
 
   /* screen width variables for responsive web */
@@ -122,6 +122,21 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  width: 80%;
+  min-height: 100vh;
+  padding-top: var(--header-total-height);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 @media (prefers-color-scheme: dark) {

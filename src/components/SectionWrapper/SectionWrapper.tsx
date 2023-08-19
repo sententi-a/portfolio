@@ -1,5 +1,3 @@
-import styles from "./SectionWrapper.module.css";
-
 interface ISectionProps {
   name: string;
   children?: React.ReactNode;
@@ -7,10 +5,9 @@ interface ISectionProps {
 
 export default function SectionWrapper({ name, children }: ISectionProps) {
   return (
-    <section>
-      <div id={name} className={`${styles.section} section`}>
+    <section className="section-wrapper">
+      <div id={name} className="section">
         {children}
-        {name}
       </div>
     </section>
   );
