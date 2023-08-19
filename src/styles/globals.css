@@ -15,6 +15,13 @@
   --header-padding: 30px;
   --header-total-height: calc(var(--header-height) + var(--header-padding));
 
+  /* screen width variables for responsive web */
+  --screen-small: 576px;
+  --screen-medium: 768px;
+  --screen-large: 992px;
+  --screen-xlarge: 1200px;
+  --screen-xxlarge: 1400px;
+
   --main-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
