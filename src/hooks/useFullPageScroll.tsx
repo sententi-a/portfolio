@@ -65,5 +65,7 @@ export default function useFullPageScroll() {
         window.clearTimeout(timeoutRef.current);
       }
     };
-  }, [currentSectionIndex]);
+  }, []);
+
+  return { currentSectionIndex };
 }

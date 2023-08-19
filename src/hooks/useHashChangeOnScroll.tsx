@@ -20,7 +20,7 @@ export default function useHashChangeOnScroll() {
       entries.forEach((entry) => {
         if (entry.isIntersecting && allowHashChange) {
           const id = entry.target.querySelector("div")?.getAttribute("id");
-          window.history.replaceState(null, "", `#${id}`);
+          // window.history.replaceState(null, "", `#${id}`);
           setActiveSection(id); // set active button in header
         }
       });
