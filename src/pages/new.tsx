@@ -1,13 +1,12 @@
 import styles from "@styles/index.module.css";
 import { Header } from "@components/Header";
 import { Home, About, Projects, Contact } from "@components/Sections";
-import useHashChangeOnScroll from "@hooks/useHashChangeOnScroll";
+import useActiveSectionOnWheel from "@hooks/useActiveSectionOnWheel";
 import useFullPageScroll from "@hooks/useFullPageScroll";
-import useSections from "@hooks/useSections";
 
 export default function New() {
   //*-- Change hash in URL on scroll && Get active section --*//
-  const { activeSection, setActiveSection } = useHashChangeOnScroll();
+  const { activeSection, setActiveSection } = useActiveSectionOnWheel();
   const { currentSectionIndex } = useFullPageScroll();
 
   return (

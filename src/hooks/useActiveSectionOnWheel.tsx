@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react";
 
-export default function useHashChangeOnScroll() {
-  const [allowHashChange, setAllowHashChange] = useState<boolean>(false);
+export default function useActiveSectionOnWheel() {
+  const [wheelTriggered, setWheelTriggered] = useState<boolean>(false);
   const [activeSection, setActiveSection] = useState<string | undefined | null>(
     undefined
   );
 
-  //*-- Change hash in URL on wheel event --*//
+  //*-- Change active section on wheel event --*//
   useEffect(() => {
     // Add wheel event
     const handleWheel = () => {
-      setAllowHashChange(true);
-      setTimeout(() => setAllowHashChange(false), 100);
+      setWheelTriggered(true);
+      setTimeout(() => setWheelTriggered(false), 100);
     };
 
     window.addEventListener("wheel", handleWheel);
 
     const observerCallback: IntersectionObserverCallback = (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting && allowHashChange) {
+        if (entry.isIntersecting && wheelTriggered) {
           const id = entry.target.querySelector("div")?.getAttribute("id");
           // window.history.replaceState(null, "", `#${id}`);
           setActiveSection(id); // set active button in header
@@ -45,7 +45,7 @@ export default function useHashChangeOnScroll() {
       observer.disconnect();
       window.removeEventListener("wheel", handleWheel);
     };
-  }, [allowHashChange]);
+  }, [wheelTriggered]);
 
   return { activeSection, setActiveSection };
 }
