@@ -7,15 +7,20 @@
   width: 100%;
   padding: var(--header-padding);
   height: var(--header-height);
-  border: blue 2px solid;
   z-index: 50;
+}
+
+#logoWrapper {
+  display: flex;
+  gap: 1vw;
+  align-items: flex-end;
 }
 
 #logo {
   font-size: 1rem;
 }
 
-#ul {
+#navButtons {
   list-style-type: none;
   display: flex;
   gap: 2vw;
