@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
-import { IHeaderProps } from "@customtypes/components";
+import { HeaderProps } from "@customtypes/index";
 
-export default function Header({ active, setActive, index }: IHeaderProps) {
+export default function Header({ active, setActive, index }: HeaderProps) {
   //TODO: hook으로 따로 빼기
   const navs = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
 
