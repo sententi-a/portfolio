@@ -1,10 +1,29 @@
+import { db } from "@firebase/firebase";
+import { collection, query, getDocs } from "firebase/firestore";
+import { ProjectsType } from "@customtypes/index";
 import styles from "@styles/index.module.css";
 import { Header } from "@components/Header";
 import { Home, About, Projects, Contact } from "@components/Sections";
 import useActiveSectionOnWheel from "@hooks/useActiveSectionOnWheel";
 import useFullPageScroll from "@hooks/useFullPageScroll";
 
-export default function New() {
+export async function getStaticProps() {
+  try {
+    //*-- Get all project documents from firestore --*//
+    const q = query(collection(db, "projects"));
+
+    const result = await getDocs(q);
+    const projects = result.docs.map((doc) => doc.data());
+
+    return { props: { projects } };
+  } catch (e) {
+    console.error(e);
+    const projects = null;
+    return { props: { projects } };
+  }
+}
+
+export default function New({ projects }: { projects: ProjectsType }) {
   //*-- Change hash in URL on scroll && Get active section --*//
   const { activeSection, setActiveSection } = useActiveSectionOnWheel();
   const { currentSectionIndex } = useFullPageScroll();
@@ -18,7 +37,7 @@ export default function New() {
       />
       <Home />
       <About />
-      <Projects />
+      <Projects projects={projects} />
       <Contact />
     </>
   );
