@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.40",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.433",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
