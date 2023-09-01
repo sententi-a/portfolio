@@ -1,5 +1,10 @@
 import { Dispatch, MutableRefObject, SetStateAction } from "react";
 
+export interface HoverTextProps {
+  before: string;
+  after: string;
+}
+
 //TODO: custom hook으로 빠질시 항목 수정
 export interface HeaderProps {
   active: string | undefined | null;
