@@ -1,5 +1,6 @@
 import Spline from "@splinetool/react-spline";
 import { SectionWrapper } from "@components/SectionWrapper";
+import HoverText from "@components/HoverText/HoverText";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       <div id={styles.t3}>A front-end developer based on Seoul, Korea</div>
       <div id={styles.h1}>YeomHyeji</div>
       <br />
-      <div id={styles.h2}> Wanna know about me?</div>
+      <HoverText before="Wanna know about me?" after="Then just scroll down!" />
     </SectionWrapper>
   );
 }
