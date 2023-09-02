@@ -12,12 +12,13 @@
 
 #logoWrapper {
   display: flex;
-  gap: 1vw;
+  gap: 5px;
   align-items: flex-end;
 }
 
 #logo {
   font-size: 1rem;
+  font-weight: 500;
 }
 
 #navButtons {
@@ -30,6 +31,8 @@
   background: none;
   border: none;
   cursor: pointer;
+  font-weight: 500;
+  font-family: "Montserrat";
 }
 
 .button:hover {
