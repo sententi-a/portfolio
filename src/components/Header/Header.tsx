@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
 import { HeaderProps } from "@customtypes/index";
@@ -22,19 +21,17 @@ export default function Header({ active, setActive, index }: HeaderProps) {
   return (
     <header id={styles.header}>
       {/* Home Logo */}
-      <Link href="/" scroll={false}>
-        <div id={styles.logoWrapper}>
-          <Image
-            src="/logo.svg"
-            alt="YHJ Logo"
-            className={styles.vercelLogo}
-            width={20}
-            height={20}
-            priority
-          />
-          <div id={styles.logo}>YHJ</div>
-        </div>
-      </Link>
+      <div id={styles.logoWrapper} onClick={() => handleOnClick("HOME")}>
+        <Image
+          src="/logo.svg"
+          alt="YHJ Logo"
+          className={styles.vercelLogo}
+          width={20}
+          height={20}
+          priority
+        />
+        <div id={styles.logo}>YHJ</div>
+      </div>
 
       {/* Header Buttons */}
       <nav>
