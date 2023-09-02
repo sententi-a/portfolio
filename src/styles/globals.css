@@ -97,7 +97,8 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap")
+    format("font-woff2");
 }
 
 * {
@@ -111,12 +112,12 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-family: "Montserrat";
 }
 
 body {
   background: var(--main-background);
   color: rgb(var(--foreground-rgb));
+  font-family: "Montserrat";
   /* background: linear-gradient(
       to bottom,
       transparent,
@@ -145,6 +146,31 @@ a {
   flex-direction: column;
   text-align: center;
 }
+
+/*-------Fonts-------*/
+.hero {
+}
+.heading1 {
+}
+.heading2 {
+}
+.heading3 {
+}
+.subheading {
+}
+.body1 {
+}
+.body2 {
+}
+.caption {
+}
+.demilight {
+}
+.medium {
+}
+.bold {
+}
+/*------------------*/
 
 @media (prefers-color-scheme: dark) {
   html {
