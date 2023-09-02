@@ -38,6 +38,7 @@ export default function About() {
       >
         {stacks.map((stack) => (
           <div
+            key={"stack" + stack}
             style={{
               border: "1px solid gray",
               borderRadius: "50px",
