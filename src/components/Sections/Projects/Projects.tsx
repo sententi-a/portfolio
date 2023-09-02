@@ -5,8 +5,11 @@ import Project from "@components/Project/Project";
 export default function Projects({ projects }: { projects: ProjectsType }) {
   return (
     <>
-      <SectionWrapper name="PROJECTS">Projects</SectionWrapper>
-      {projects && projects.map((project) => <Project project={project} />)}
+      {/* <SectionWrapper name="PROJECTS">Projects</SectionWrapper> */}
+      {projects &&
+        projects.map((project) => (
+          <Project key={"project" + project.title} project={project} />
+        ))}
     </>
   );
 }
