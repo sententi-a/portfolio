@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: var(--header-padding);
+  padding: var(--header-padding-vertical) var(--header-padding-horizontal);
   height: var(--header-height);
   z-index: 50;
 }
