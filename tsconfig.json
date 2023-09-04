@@ -24,7 +24,8 @@
       "@styles/*": ["./src/styles/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@customtypes/*": ["./src/types/*"],
-      "@firebase/*": ["./firebase/*"]
+      "@firebase/*": ["./firebase/*"],
+      "@assets/*": ["./src/assets/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

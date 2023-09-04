@@ -137,13 +137,8 @@ a {
   text-decoration: none;
 }
 
-.section-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .section {
-  /* width: 80%; */
+  width: 100vw;
   padding: 0px 20vw 0px 20vw;
   min-height: 100vh;
   padding-top: var(--header-total-height);
