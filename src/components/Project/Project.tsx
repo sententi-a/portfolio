@@ -6,7 +6,6 @@ import styles from "./Project.module.css";
 import githubImg from "@assets/github-mark.svg";
 
 export default function Project({ project }: { project: Project }) {
-  console.log(project);
   return (
     <SectionWrapper name="PROJECTS">
       <div className={styles.wrapper}>
@@ -21,7 +20,9 @@ export default function Project({ project }: { project: Project }) {
         <div className={styles.images}></div>
         <div className={styles.stacks}>
           {project.stacks.map((stack) => (
-            <div className={styles.stack}>{stack}</div>
+            <div key={project.title + " " + stack} className={styles.stack}>
+              {stack}
+            </div>
           ))}
         </div>
       </div>
