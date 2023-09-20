@@ -1,7 +1,6 @@
 import { db } from "@firebase/firebase";
 import { collection, query, getDocs } from "firebase/firestore";
 import { ProjectsType } from "@customtypes/index";
-import styles from "@styles/index.module.css";
 import { Header } from "@components/Header";
 import { Home, About, Projects, Contact } from "@components/Sections";
 import useActiveSectionOnWheel from "@hooks/useActiveSectionOnWheel";
