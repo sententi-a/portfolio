@@ -1,0 +1,52 @@
+.wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 2.3rem;
+}
+
+.row {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.description {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.role {
+  font-size: 1.1rem;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 3px 20px;
+  border-radius: 40px;
+}
+
+.stacks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.stack {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid gray;
+  padding: 0px 10px;
+}
