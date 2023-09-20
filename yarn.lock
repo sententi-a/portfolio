@@ -1291,6 +1291,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"classnames@npm:^2.2.5":
+  version: 2.3.2
+  resolution: "classnames@npm:2.3.2"
+  checksum: 2c62199789618d95545c872787137262e741f9db13328e216b093eea91c85ef2bfb152c1f9e63027204e2559a006a92eb74147d46c800a9f96297ae1d9f96f4e
+  languageName: node
+  linkType: hard
+
 "client-only@npm:0.0.1":
   version: 0.0.1
   resolution: "client-only@npm:0.0.1"
@@ -3171,7 +3178,7 @@ __metadata:
     next: 13.4.10
     react: 18.2.0
     react-dom: 18.2.0
-    swiper: ^10.1.0
+    react-responsive-carousel: ^3.2.23
     typescript: 5.1.6
   languageName: unknown
   linkType: soft
@@ -3194,7 +3201,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.8, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -3275,6 +3282,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-easy-swipe@npm:^0.0.21":
+  version: 0.0.21
+  resolution: "react-easy-swipe@npm:0.0.21"
+  dependencies:
+    prop-types: ^15.5.8
+  checksum: 225f12a9dd410db1c790220867ab1eb58e2ef0a2bdae8541330805fc5b9905e242ab307b019f9aaed76473849a753f363baff03fa8a77e7a1860d7b41dc83ec0
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -3286,6 +3302,17 @@ __metadata:
   version: 2.0.2
   resolution: "react-merge-refs@npm:2.0.2"
   checksum: 64758870d79ad52e6666d1d30cdecd5a72722edfd5c89808b41acdbd81a039f0c78b8b576f7ae247010468fc45cb57dd31f402693c64224439dbe0127f4389f3
+  languageName: node
+  linkType: hard
+
+"react-responsive-carousel@npm:^3.2.23":
+  version: 3.2.23
+  resolution: "react-responsive-carousel@npm:3.2.23"
+  dependencies:
+    classnames: ^2.2.5
+    prop-types: ^15.5.8
+    react-easy-swipe: ^0.0.21
+  checksum: 8a5b915f140a05425554a0c108c60a0b103dae49808486d39147df09c832ad712c7d7f4a66f0d0c39529ca095b4a327f0cc440d91b5f7a39ab13076931f74bd0
   languageName: node
   linkType: hard
 
@@ -3679,13 +3706,6 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 53b1e247e68e05db7b3808b99b892bd36fb096e6fba213a06da7fab22045e97597db425c724f2bbd6c99a3c295e1e73f3e4de78592289f38431049e1277ca0ae
-  languageName: node
-  linkType: hard
-
-"swiper@npm:^10.1.0":
-  version: 10.1.0
-  resolution: "swiper@npm:10.1.0"
-  checksum: cb825a513e029cb4daf5ddce4c4fa2df425a348f05e78529f574e8a0e74c6016ae567efabac3d219828cd81ceeaff1563c832633ae014100d8a0610b3e4b3790
   languageName: node
   linkType: hard
 
