@@ -1,5 +1,9 @@
 import { Dispatch, MutableRefObject, SetStateAction } from "react";
 
+export interface SlideProps {
+  children: React.ReactNode;
+}
+
 export interface HoverTextProps {
   before: string;
   after: string;
